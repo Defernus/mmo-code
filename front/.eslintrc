@@ -1,0 +1,84 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "globals": {
+    "__CONFIG__": true,
+    "__ENV__": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "jsx-a11y",
+    "react",
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-unused-vars": "error",
+    "linebreak-style": ["error", "unix"],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": ["TemplateLiteral"]
+      }
+    ],
+    "no-console": "error",
+    "import/extensions": "off",
+    "max-len": ["error", { "code": 120 }],
+    "no-plusplus": 0,
+    "no-underscore-dangle": 0,
+    "quotes": ["error", "double"],
+    "no-unused-vars": "off",
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "before",
+          ":": "before"
+        }
+      }
+    ],
+    "no-use-before-define": "off",
+    "template-curly-spacing": [
+      "off"
+    ],
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+
+      "alias": {
+        "map": [
+          ["@i18n", "./i18n.js"]
+        ]
+      },
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}

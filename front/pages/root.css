@@ -1,0 +1,24 @@
+:root {
+    --white: #ffffff;
+    --light-grey: #f3f4f7;
+    --black: #000000;
+    --dark-red: #c02323;
+    --red: #e23333;
+    --light-red: #fc5051;
+
+    --blue-black: #061027;
+
+    --darker-blue-grey: #121d3b;
+    --dark-blue-grey: #1a243f;
+    --blue-grey: #9b9faa;
+    --light-blue-grey: #e0e4ee;
+
+    --light-navy-blue: rgb(49, 69, 121, 0.06);
+
+    --error: var(--light-red);
+
+    --main-theme-color: #ff604c;
+    --main-theme-color-dark: #f22f40;
+    --main-theme-color-light: #fd9784;
+    --main-theme-gradient: radial-gradient(circle at 49% 100%, var(--main-theme-color-light), var(--main-theme-color) 35%, var(--main-theme-color-dark) 81%);
+}

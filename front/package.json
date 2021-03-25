@@ -1,0 +1,45 @@
+{
+  "name": "mmo-edit",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=u node server.js",
+    "build": "cross-env NODE_ENV=production next build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "lint": "eslint './src/**' --format node_modules/eslint-friendly-formatter . --ext .js --ext .jsx --ext .ts --ext .tsx --cache",
+    "lint:fix": "eslint './src/**' --format node_modules/eslint-friendly-formatter . --ext .js --ext .jsx --ext .ts --ext .tsx --cache --fix"
+  },
+  "dependencies": {
+    "@material-ui/core": "4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@monaco-editor/react": "^4.1.0",
+    "axios": "0.21.1",
+    "express": "4.17.1",
+    "http-proxy-middleware": "1.0.6",
+    "moment": "2.29.1",
+    "next": "^10.0.9",
+    "next-i18next": "7.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-test-attributes": "^1.0.0",
+    "styled-components": "5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "14.14.10",
+    "@types/react": "^17.0.0",
+    "@types/styled-components": "5.1.4",
+    "@typescript-eslint/eslint-plugin": "4.9.0",
+    "@typescript-eslint/parser": "4.9.0",
+    "babel-eslint": "10.1.0",
+    "babel-plugin-styled-components": "1.12.0",
+    "cross-env": "7.0.3",
+    "eslint": "7.15.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-friendly-formatter": "4.0.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "typescript": "4.1.2"
+  }
+}
