@@ -2,7 +2,9 @@ version: "3.7"
 
 services:
   front:
-    build: "./front"
+    build: ./front
     ports:
       - 3132:3000
 
+  back:
+    build: ./back
